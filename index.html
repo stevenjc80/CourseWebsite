@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+<title>EECS1234 | Page Title</title>
+<meta charset="utf-8">
+<meta name="author" content="Steven J. Castellucci">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="http://lassonde.yorku.ca/profiles/lassonde/themes/custom/lassonde/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+<!-- logo area -->
+<div class='container top'>
+<div class='schools-logo'><a href="http://eecs.lassonde.yorku.ca/"><img src="images/logo.png" alt="Logo" style="height:40px;width:80px;float:left"></a>EECS1234</div>
+<div class='right toptext wide'>The Course Title<br>Term Year</div>
+</div>
+<!-- //logo area -->
+
+<!-- top navigation links -->
+<div class='navbar card-2 slim top_menu' id='top_menu'>
+<div style='overflow:auto;'>
+<div style='float:left;overflow:hidden;height:28px'>
+<a id='side_menu_btn' href='javascript:void(0);' class='top_menu-icons hide-large left' onclick='open_side_menu()' title='Menu'><img src="images/menu.png" alt="Menu" style="height:20px;width:20px"></a>
+<a id='home_link' href='index.html' class='top_menu-icons left' title='Home'><img src="images/home.png" alt="Home" style="height:20px;width:20px"></a>
+<a id='top_link1' href='indexA.html' class='hide-small'>Top_Link1</a>
+<a id='top_link2' href='indexB.html' class='hide-small'>Top_Link2</a>
+</div>
+<div class='hide-small' style='float:left;overflow:hidden;height:28px;'>
+<a id='top_menu1_btn' href='javascript:void(0);' onclick='open_top_menu("top_menu1")'>Top_Menu1&nbsp;<span id='top_menu1_arrow'>&#9660;</span></a>
+<a id='top_menu2_btn' href='javascript:void(0);' onclick='open_top_menu("top_menu2")'>Top_Menu2&nbsp;<span id='top_menu2_arrow'>&#9660;</span></a>
+</div>
+</div>
+<div id='top_menu1' class='dropnav light-grey card-2 center'></div>
+<div id='top_menu2' class='dropnav light-grey card-2 center'></div>
+</div>
+<!-- //top navigation links -->
+
+<!-- top navigation submenus -->
+<div id="top_menu1_content" style="display:none;">
+<span onclick='close_top_menu("top_menu1")' class='closebtn xlarge'>&times;</span>
+<div class='row-padding'>
+<div class='col l2 m4'>
+<h3>SubTopic1</h3>
+<a href='indexA.html'>Link1</a>
+<a href='indexB.html'>Link2</a>
+<a href='indexC.html'>Link3</a>
+</div>
+<div class='col l2 m4'>  
+<h3>SubTopic2</h3>
+<a href='indexA.html'>Link1</a>
+<a href='indexB.html'>Link2</a>
+<a href='indexC.html'>Link3</a>
+</div>
+</div>
+</div>
+<div id="top_menu2_content" style="display:none;">
+<span onclick='close_top_menu("top_menu2")' class='closebtn xlarge'>&times;</span>
+<div class='row-padding'>
+<div class='col l2 m4'>
+<h3>SubTopic3</h3>
+<a href='indexA.html'>Link1</a>
+<a href='indexB.html'>Link2</a>
+<a href='indexC.html'>Link3</a>
+</div>
+<div class='col l2 m4'>  
+<h3>SubTopic4</h3>
+<a href='indexA.html'>Link1</a>
+<a href='indexB.html'>Link2</a>
+<a href='indexC.html'>Link3</a>
+</div>
+</div>
+</div>
+<!-- //top navigation submenus -->
+
+<!-- side navigation topics -->
+<div class='row light-grey' id='below_top_menu'>
+<div class='col slim' id='side_menu'>
+<div id='side_menu_container'>
+<div class='light-grey' id='side_menu_container2'>
+<a href='javascript:void(0)' onclick='close_side_menu()' class='closebtn hide-large large' style='padding:3px 12px;'>&times;</a>
+<h2><span class="left_h2">SideNav_Topic1</span></h2>
+<a id='side_link1A' target="_top" href="indexA.html">Topic1_Link1</a>
+<a id='side_link1B' target="_top" href="indexB.html">Topic1_Link2</a>
+<a id='side_link1C' target="_top" href="indexC.html">Topic1_Link3</a>
+<br>
+<h2><span class="left_h2">SideNav_Topic2</span></h2>
+<a id='side_link2A' target="_top" href="indexA.html">Topic2_Link1</a>
+<a id='side_link2B' target="_top" href="indexB.html">Topic2_Link2</a>
+<a id='side_link2C' target="_top" href="indexC.html">Topic2_Link3</a>
+<br>
+<h2><span class="left_h2">SideNav_Topic3</span></h2>
+<a id='side_link3A' target="_top" href="indexA.html">Topic3_Link1</a>
+<a id='side_link3B' target="_top" href="indexB.html">Topic3_Link2</a>
+<a id='side_link3C' target="_top" href="indexC.html">Topic3_Link3</a>
+<br><br>
+</div></div>&nbsp;</div>
+<!-- //side navigation topics -->
+
+<div class='rest'>
+<div class='row white' id='main'>
+
+
+<!-- YOUR CONTENT GOES HERE -->
+
+
+<script>
+  <!-- This script can highlight the link topics corresponding to this page. -->
+  document.getElementById("top_link1").className = "highlight";
+  document.getElementById("side_link2B").className = "highlight";
+</script>
+
+<h1>Title</h1>
+<h2>Topic</h2>
+<p>Text</p>
+<p>More text.</p>
+<div class="example">
+<h3>Text Box</h3>
+<div class="code notranslate htmlHigh">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
+&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
+&lt;/body&gt;<br>&lt;/html&gt;
+</div>
+</div>
+<TABLE class="shadedrows1 schedule borderbottom invertedheader">
+<TR>
+	<TH colspan="2">Week 1 (week of September 7, 2015)</TH>
+</TR>
+<TR>
+	<TD width="150">Administrative News:</TD>
+	<TD><b>The first day of lectures is September 10.</b>
+		You are encouraged to attend lectures, even if you are not
+		officially enrolled, so you don't fall behind.</TD>
+</TR>
+<TR>
+	<TD width="150">Lecture Content:</TD>
+	<TD><a href="LectureSchedule/Content.shtml#TopicA">Topic A</a></TD>
+</TR>
+<TR>
+  <TD width="150">Homework Discussion:</TD>
+  <TD>(none)</TD>
+</TR>
+<TR class="borderbottom">
+  <TD width="150">Homework Due:<br>
+    (9:00 pm Thursdays)</TD>
+  <TD>(none)</TD>
+</TR>
+</TABLE>
+<BR><BR>
+<table class="note"><tr>
+<th style="width:34px"><img src="images/note.png" alt="Note" style="height:32px;width:32px"></th>
+<td>Some important note or reminder.</td>
+</tr></table>
+
+
+<!-- YOUR CONTENT ENDS HERE -->
+
+
+</div>
+
+<!-- footer content -->
+<div class="footer container white">
+<hr>
+<div class="center small opacity">
+Department of Electriccal Engineering and Computer Science<br>
+York University, Toronto, Ontario, Canada<br><br>
+<a href="http://www.schools.com/w3css/">Powered by W3.CSS</a><br><br>
+</div>
+<br><br>
+</div>
+</div>
+</div>
+<!-- This script must be initialized after all elements are defined. -->
+<script src="menus.js"></script>
+</body>
+</html>
